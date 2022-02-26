@@ -60,10 +60,12 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
+    background-color: rgb(0, 4, 17);
 }
 
 h1, h2, h3, h4, h5, h6, p, a, i {
     text-decoration: none;
+    color: rgb(225, 239, 230);
 }
 
 h1 {
@@ -72,28 +74,45 @@ h1 {
 
 h2 {
     font-size: 6rem;
+    padding: .5em;
 }
 
 h3 {
     font-size: 5rem;
 }
-
 h4 {
-    font-size: 4rem;
-}
-
-p, a {
     font-size: 3rem;
+}
+p, a {
+    font-size: 2.2rem;
 }
 
 /* header section */
 header {
     width: 100%;
     height: 100vh;
-    background-image: url('../img/menu-header.jpg');
+    background-image: url('../img/home-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
+}
+.header {
+    background-color: rgb(0, 4, 17, .8);
+    display: flex;
+    flex-direction: column;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    column-gap: 8em;
+    padding: 2em;
 }
 
 /* spacer */
@@ -114,10 +133,39 @@ header {
     width: 100%;
     height: auto;
     background-image: url('../img/staff-bartender.jpg');
-    background-color: rgb(0, 4, 17);
+    background-color: rgb(0, 4, 17, .8);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
+}
+.menu h2 {
+    background-color: rgb(0, 4, 17, .8);
+}
+.menu-item, .menu-section {
+    width: auto;
+}
+.menu-item {
+    display: flex;
+    width: 50.5em;
+    flex-wrap: wrap;
+    column-gap: 13em;
+    padding-bottom: 1em;
+}
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 32%;
+    text-align: left;
+}
+.menu-container {
+    background-color: rgb(0, 4, 17, .8);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 20em;
+    row-gap: 10em;
 }
 
 /* footer section */
@@ -126,6 +174,42 @@ footer {
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: rgb(0, 4, 17);
+}
+footer p, footer nav {
+    background-color: rgb(0, 4, 17);
+}
+footer nav {
+    display: flex;
+    column-gap: 2em;
+}
+label {
+    color: rgb(225, 239, 230);
+    text-align: center;
+}
+button {
+    padding: 0px;
+    border: none;
+}
+.upper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+}
+div.input {
+    column-gap: 0px;
+}
+.input input {
+    font-size: 3rem;
+}
+.p p {
+    text-align: right;
+    font-size: .5em;
+    margin-right: 8%;
 }
 
 /* mobile media query */
