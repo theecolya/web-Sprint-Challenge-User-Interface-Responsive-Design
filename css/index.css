@@ -62,6 +62,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     background-color: rgb(0, 4, 17);
+    width: auto;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, i {
@@ -95,6 +96,9 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+}
+.header a h1 {
+    font-size: 2em;
 }
 .header {
     background-color: rgb(0, 4, 17, .8);
@@ -132,6 +136,9 @@ header {
     text-align: center;
     background-color: rgb(0, 4, 17);
 }
+.gallery h2 {
+    text-align: center;
+}
 div.ourfood {
     display: flex;
     flex-wrap: wrap;
@@ -139,6 +146,10 @@ div.ourfood {
     row-gap: 3em;
     margin-left: 5%;
     margin-right: 5%;
+}
+.ourfood img {
+    width: 31em;
+    height: auto;
 }
 /* about us section */
 .about {
@@ -179,7 +190,7 @@ div.ourfood {
 }
 
 .contact-container {
-    width: 100%;
+    width: auto;
     height: 100%;
     background-color: rgb(0, 4, 17, .8);
 }
@@ -215,6 +226,10 @@ div.ourfood {
     width: 25%;
 }
 
+.contacts a {
+    word-wrap: break-word;
+}
+
 /* footer section */
 footer {
     width: 100%;
@@ -248,6 +263,7 @@ button {
     flex-direction: column;
 }
 div.input {
+    display: flex;
     column-gap: 0px;
 }
 .input input {
